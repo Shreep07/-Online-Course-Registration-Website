@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h2>LearnHub</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <h1>Learn Today, Lead Tomorrow!</h1>
+    <p>Explore new skills and build your future with our online courses.</p>
+    <a href="#courses" class="hero-btn">Explore Courses</a>
+</section>
+
+<!-- Courses Section -->
+<section class="courses-section" id="courses">
+
+    <h2>Our Popular Courses</h2>
+    <p class="description">
+        Choose from our wide range of professional courses.
+    </p>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript and build modern websites.</p>
+            <p><strong>Duration:</strong> 3 Months</p>
+            <p><strong>Fee:</strong> ₹5,000</p>
+            <a href="#register" class="course-btn">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Python Programming</h3>
+            <p>Learn Python fundamentals and develop programming skills.</p>
+            <p><strong>Duration:</strong> 2 Months</p>
+            <p><strong>Fee:</strong> ₹4,000</p>
+            <a href="#register" class="course-btn">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Data Science</h3>
+            <p>Explore data analysis, visualization and machine learning basics.</p>
+            <p><strong>Duration:</strong> 4 Months</p>
+            <p><strong>Fee:</strong> ₹7,000</p>
+            <a href="#register" class="course-btn">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Java Programming</h3>
+            <p>Understand object-oriented programming using Java.</p>
+            <p><strong>Duration:</strong> 3 Months</p>
+            <p><strong>Fee:</strong> ₹5,500</p>
+            <a href="#register" class="course-btn">Enroll Now</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Registration Form -->
+<section class="registration-section" id="register">
+
+    <h2>Course Registration Form</h2>
+    <p>Fill in your details to register for a course.</p>
+
+    <form id="registrationForm">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number"
+               pattern="[0-9]{10}" required>
+
+        <label for="course">Select Course</label>
+        <select id="course" required>
+            <option value="">-- Select a Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Java Programming">Java Programming</option>
+        </select>
+
+        <label for="education">Educational Qualification</label>
+        <select id="education" required>
+            <option value="">-- Select Qualification --</option>
+            <option value="PUC">PUC</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Graduate">Graduate</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <h2>About LearnHub</h2>
+    <p>
+        LearnHub is an online learning platform that helps students
+        develop new skills through affordable and practical courses.
+        Our goal is to make quality education accessible to everyone.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 LearnHub | Online Course Registration Website</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

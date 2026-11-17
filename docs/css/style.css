@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f6ff;
+    color: #222;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #21164b;
+    color: white;
+}
+
+.navbar h2 {
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #b9a8ff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #4832a8, #8b5cf6);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: white;
+    color: #4832a8;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: #e5ddff;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.courses-section h2,
+.registration-section h2,
+.about h2 {
+    font-size: 32px;
+    color: #21164b;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 28px 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-card h3 {
+    color: #4832a8;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.course-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #4832a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.course-btn:hover {
+    background-color: #21164b;
+}
+
+/* Registration Section */
+.registration-section {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: #ebe7ff;
+}
+
+.registration-section > p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+form {
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #21164b;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #4832a8;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4832a8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #21164b;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #25834b;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 55px 10%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #21164b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
